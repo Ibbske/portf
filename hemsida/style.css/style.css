@@ -138,19 +138,7 @@ nav, h1, p, div, ul, li {
   transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
-.center-container {
-  max-width: 700px;
-  margin: 40px auto 0 auto;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
-  padding: 36px 32px;
-  text-align: center;
-}
 
-body.dark-mode-btn .center-container {
-  background: #23272f;
-}
 
 .project-list {
   display: flex;
@@ -192,6 +180,38 @@ body.dark-mode-btn .project-list li {
 
 body.dark-mode-btn .project-list li a {
   color: #f0f0f0;
+}
+
+.p {
+  font-family: Verdana;
+ 
+}
+
+.center-container {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  transition: box-shadow 0.3s, background 0.3s;
+  padding: 36px 32px;
+  text-align: center;
+}
+
+.center-container:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  background: #f5f7fa;
+}
+
+body.dark-mode-btn .center-container {
+  background: #23272f;
+  color: #f5f7fa;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+
+body.dark-mode-btn .center-container:hover {
+  background: #181a20;
+  box-shadow: 0 8px 32px #007BFF33;
 }
 
 
